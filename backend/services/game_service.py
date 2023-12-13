@@ -2,7 +2,7 @@ from random import choice, shuffle
 import uuid
 
 from models.constants import MAX_PLAYERS, GameType
-from models.exceptions.info_exception import InfoException
+from models.exceptions.exceptions import InfoException
 from models.game_model import Game
 from models.player_model import Player
 from persistence import game_repo, user_repo, cards_repo
@@ -48,7 +48,7 @@ def start_game(game_id: str, user_id: str) -> Game:
   elif game.get_action_player_id() != user.id:
     raise InfoException("You can't change status for this game")
   else: 
-    game.state = GameType.ACTION
+    game.round_index = 1
     game.action_player = choice(game.players)
     for player in game.players:
       player.cards.append(game.cards.pop())

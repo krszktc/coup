@@ -1,0 +1,179 @@
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerA. You have hidden Captain card, hidden Ambassador card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "assistant", "content": "PlayerA claim Duke" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerA. You have hidden Duke card, hidden Ambassador card and 10 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "assistant", "content": "PlayerA claim Income" },
+    { "role": "user", "content": "PlayerA force Coup" },
+    { "role": "user", "content": "PlayerA choose player" },
+    { "role": "assistant", "content": "PlayerA chose PlayerB" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Duke card, hidden Ambassador card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim Income" },
+    { "role": "user", "content": "PlayerA effect take_1_coin" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB claim ForeignAid" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Duke card, hidden Ambassador card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim Duke" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerC pass" },
+    { "role": "user", "content": "PlayerA effect take_3_coin" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB claim Duke" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Captain card, hidden Ambassador card and 2 coins. PlayerC has one card visible" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim ForeignAid" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerC pass" },
+    { "role": "user", "content": "PlayerC claim Duke" },
+    { "role": "user", "content": "PlayerA pass" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerA effect blocked" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB claim Captain" },
+    { "role": "user", "content": "PlayerB choose player" },
+    { "role": "assistant", "content": "PlayerB chose PlayerC" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Exchange card, hidden Ambassador card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim ForeignAid" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerC pass" },
+    { "role": "user", "content": "PlayerA effect take_2_coins" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB claim Duke" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Contessa card, hidden Contessa card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim Duke" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerC pass" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerC pass" },
+    { "role": "user", "content": "PlayerA effect take_3_coins" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB claim Exchange" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Assassinate card, hidden Contessa card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim Income" },
+    { "role": "user", "content": "PlayerA force Coup" },
+    { "role": "user", "content": "PlayerA choose player" },
+    { "role": "user", "content": "PlayerA chose PlayerB" },
+    { "role": "user", "content": "PlayerB choose card" },
+    { "role": "assistant", "content": "PlayerB chose Contessa" },
+    { "role": "user", "content": "PlayerB loosed influence" },
+    { "role": "user", "content": "PlayerA effect pay_7_coins" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB chose Assassinate" },
+    { "role": "user", "content": "PlayerB choose player" },
+    { "role": "assistant", "content": "PlayerB chose PlayerA" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Captain card, hidden Captain card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim Duke" },
+    { "role": "assistant", "content": "PlayerB challenge" },
+    { "role": "user", "content": "PlayerB loosed challenge" },
+    { "role": "user", "content": "PlayerB choose card" },
+    { "role": "assistant", "content": "PlayerB chose Contessa" },
+    { "role": "user", "content": "PlayerB loosed influence" },
+    { "role": "user", "content": "PlayerA exchange Duke" },
+    { "role": "user", "content": "PlayerA effect take_3_coin" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB claim ForeignAid" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Captain card, hidden Captain card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim Assassinate" },
+    { "role": "user", "content": "PlayerA choose player" },
+    { "role": "user", "content": "PlayerA chose PlayerC" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerC pass" },
+    { "role": "assistant", "content": "PlayerB claim Contessa" },
+    { "role": "user", "content": "PlayerA pass" },
+    { "role": "user", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerA effect pay_3_coins" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB claim Captain" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerB. You have hidden Contessa card, hidden Duke card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim Assassinate" },
+    { "role": "user", "content": "PlayerA choose player" },
+    { "role": "user", "content": "PlayerA chose PlayerC" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerC pass" },
+    { "role": "user", "content": "PlayerA pass" },
+    { "role": "assistant", "content": "PlayerB pass" },
+    { "role": "user", "content": "PlayerA effect pay_3_coins" },
+    { "role": "user", "content": "PlayerA choose card" },
+    { "role": "user", "content": "PlayerA chose Duke" },
+    { "role": "user", "content": "PlayerA loosed influence" },
+    { "role": "user", "content": "PlayerB turn" },
+    { "role": "assistant", "content": "PlayerB claim Duke" }
+  ]
+}
+
+{
+  "messages": [
+    { "role": "system", "content": "We play COUP card game. You are PlayerC. You have hidden Contessa card, hidden Duke card and 2 coins" },
+    { "role": "user", "content": "PlayerA turn" },
+    { "role": "user", "content": "PlayerA claim Assassinate" },
+    { "role": "user", "content": "PlayerA choose player" },
+    { "role": "user", "content": "PlayerA chose PlayerC" },
+    { "role": "user", "content": "PlayerB pass" },
+    { "role": "assistant", "content": "PlayerC pass" },
+    { "role": "assistant", "content": "PlayerC claim Contessa" },
+    { "role": "user", "content": "PlayerA challenge" },
+    { "role": "user", "content": "PlayerC loosed challenge" },
+    { "role": "user", "content": "PlayerC choose card" },
+    { "role": "assistant", "content": "PlayerC chose Duke" }
+  ]
+}

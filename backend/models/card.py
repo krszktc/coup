@@ -4,10 +4,10 @@ from pydantic import BaseModel
 
 class Card(BaseModel):
     code: str
-    can_be_blocked: bool
     visible_for_others: bool = False
     default_color: str | None = None
     character_name: str | None = None
     action: ActionType | None = None
     effect: EffectType | None = None
-    contraction: ActionType | None = None   
+    contraction: ActionType | None = None
+    

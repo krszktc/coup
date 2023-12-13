@@ -1,16 +1,22 @@
 from fastapi import APIRouter
 from models.player_model import PlayerActionDto
 from services import player_service
-from models.game_model import GameDto
+from models.game_model import GameDto, ActionDto
 
 router = APIRouter(
     prefix="/player",
     tags=["player"],
 )
 
+@router.post("/action/{card_code}")
+async def action(card_code: str, dto: ActionDto) -> PlayerActionDto:
+    operation = player_service.action(card_code, dto)
+    return PlayerActionDto(operation)
+
+
 @router.post("/card/{card_code}")
-async def raise_card(card_code: str, dto: GameDto) -> PlayerActionDto:
-    operation = player_service.raise_card(card_code, dto)
+async def card(dto: GameDto) -> PlayerActionDto:
+    operation = player_service.card(dto)
     return PlayerActionDto(operation)
 
 
@@ -22,5 +28,5 @@ async def decision_pass(dto: GameDto) -> PlayerActionDto:
 
 @router.post("/challenge")
 async def decision_challenge(dto: GameDto) -> PlayerActionDto:
-    operation = player_service.challenge(dto)
+    operation = player_service.decision_challenge(dto)
     return PlayerActionDto(operation)

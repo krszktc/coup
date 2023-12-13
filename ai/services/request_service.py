@@ -9,21 +9,21 @@ def get_game(id: str):
 
 def get_cards():
   result = client.get(f'http://localhost:3000/cards')
-  return result.json
+  return result
 
 
 def raise_card(card_code: str):
   result = client.post(f'http://localhost:3000/player/{card_code}')
-  return result.json
+  return result
 
 
 def raise_pass():
   result = client.post(f'http://localhost:3000/player/pass')
-  return result.json
+  return result
 
 
 def raise_challenge():
   result = client.post(f'http://localhost:3000/player/challenge')
-  return result.json
+  return result
 
 

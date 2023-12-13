@@ -1,6 +1,6 @@
 from random import choice
 from storage import app_storage
-import request_service
+from services import request_service
 
 def get_games():
   return app_storage.get_games()
@@ -61,7 +61,7 @@ def __decide_contraction(game):
 
   should_lie = choice([0,1]) == 0
 
-  if len(my_cards) > 0:
+  if len(my_block_cards) > 0:
     request_service.raise_card(choice(my_block_cards))
   elif len(block_cards) > 0 and should_lie:
     request_service.raise_card(choice(block_cards))

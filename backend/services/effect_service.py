@@ -2,7 +2,7 @@
 from random import shuffle
 from models.card import Card
 from models.constants import EffectType, GameType
-from models.exceptions.info_exception import InfoException
+from models.exceptions.exceptions import InfoException
 from models.game_model import Game
 from models.player_model import Player
 
@@ -32,14 +32,6 @@ def next_round(game: Game):
     game.action_player = game.players[0]
   else:
     game.action_player = game.players[active_player_index + 1]
-
-
-def loose_power(player: Player, card: Card):
-  loose_cards = [pCard for pCard in player.cards if pCard.code == card.code]
-  if len(loose_cards) > 0:
-    loose_cards[0].visible_for_others = True
-  else:
-    raise InfoException("You don't have requested card.") 
   
 
 def pay_for_blocked_action(game: Game):
