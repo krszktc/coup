@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
 import chat_service_c as chat_service
 
 app = FastAPI()

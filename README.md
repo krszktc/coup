@@ -18,7 +18,7 @@ React API client. To run it call `npm start` in `/ui` folder \
 The page is available under `http://localhost:4000`
 
 ## open-ai
-Fast api ChatGPT client. TO run it update `OPENAI_API_KEY` in `.env` file and run `uvicorn main_b:app --env-file .env`. The `main_a.py` contain issued implementation leaved only for review purpose.
+Fast api ChatGPT client. TO run it update `OPENAI_API_KEY` in `.env` file and run `uvicorn main_b:app --env-file .env`. The `main_a.py` contain issued implementation leaved only for review purpose. File `main_c.py` run scenario for no fine tuning model.
  
 # Description
 
@@ -62,9 +62,9 @@ Contain a few small components represent accordingly `card`, `player board` and 
 ## open-ai
 Contain two FastApi applications. First one `main_a.py` has broken implementation for multiple Assistants working in parallel on the same Thread. It doesn't work correctly by it experimental character. Second one `main_b.py` contain classic approach with chat completion. `chat_service_a.py` and `chat_service_b.py` are related to applications.
 
-The flow for `main_b` contain replaceable controllers operate on string and json responses. The controllers could be used alternately on any step of game.
+The flow for `main_b` contain replaceable controllers operate on string and json responses. The controllers could be used alternately on any step of game. The flow for `main_c` contain log parser and model descriptor.
 
-Folder `files` contain scenarios to train ChatGPT model in readable format as `coup_learn.jsonl` and parseable format as `coupe_learn_single_line.py`. The model return some inconsistent responses from time to time but only 12 examples has been used in fine-tunning. File `example_flow.png` shows example game session with ChatGPT play as PlayerB and PlayerC
+Folder `files` contain scenarios to train ChatGPT model in readable format as `coup_learn.jsonl` and parseable format as `coupe_learn_single_line.py`. The model return some inconsistent responses from time to time but only 12 examples has been used in fine-tunning. File `example_flow_2.png` shows example game session with ChatGPT play as PlayerB and PlayerC. File `example_flow_3.png` shows example output for third scenario.
 
 # ToDo
 - finish UI (currently more like backbone)
